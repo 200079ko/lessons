@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ztest</title>
+	<meta charset="utf-8">
+	<style>
+		table,td,th{
+			border:solid 1px green;
+			width: 400px;
+		}
+		.Facebook{
+			background-color:#ABABCE;
+			color:green;
+		}
+		div{
+			background-color:#cccccccc;
+		}
+		#gridWrapper{
+			display:grid;
+     		grid-template-columns:1fr 1fr 1fr;
+     		grid-template-rows:100px 100px;
+     		grid-gap: 10px;
+  		 }
+		#gridWrapper>div{
+			background-color: pink;
+		}
+		
+	</style>
+</head>
+<body>
+<h1>last week revision</h1>
+<hr>
+<table>
+	<caption>table's introduction</caption>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>名前</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="Facebook">@Gpl</td>
+			<td>gopal</td>
+		</tr>
+		<tr>
+			<td class="Facebook">@Vick</td>
+			<td>Vickram</td>	
+			
+			<div id="gridWrapper">
+				<div>1:pine apple</div>
+				<div>2:watermelon</div>
+				<div>3:grape</div>
+				<div>4:orange</div>
+				<div>5:plum</div>
+				<div>6:banana</div>
+			</div>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
