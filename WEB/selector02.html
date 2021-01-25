@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>juery: selector</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>jquery: selector</h1>
+	<hr>
+	<h2>最後の一つだけ、色変える</h2>
+	<ul>
+		<li>パパイヤ</li>
+		<li>スイカ</li>
+		<li>パインアップル</li>
+		<li>アップル</li>
+		<li>ぶどう</li>
+		<li>ゆずレモン</li>
+		<li>アヴォガド</li>
+		<li>kiwi</li>
+	</ul>
+	<hr>
+	<h2>偶数番だけ( even )、色を変える</h2>
+	<ul>
+		<li>パパイヤ</li>
+		<li>スイカ</li>
+		<li>パインアップル</li>
+		<li>アップル</li>
+		<li>ぶどう</li>
+		<li>ゆずレモン</li>
+		<li>アヴォガド</li>
+		<li>kiwi</li>
+	</ul>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('li:last-child').css('color','brown');
+			// $('li:second-child').css('color','purple');
+			// $('li:first-child').css('color','green');
+			$('li:even').css('color','pink');
+			  // $('li:odd').css('color','navy');
+		})
+	</script>
+
+
+</body>
+</html>

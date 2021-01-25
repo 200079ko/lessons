@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>クイズ</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>クイズ with jQuery</h1>
+問題文をクリックすると、正解が表示されます。
+<hr>
+<p>
+	「馬場」この名前の発音は、何でしょうか？
+</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function(){
+		$("p").on("click",function(){
+			$("p").text("ばば");
+		});
+		$("h1").on("click",function(){
+			$("h1").hide("slow");
+		});
+		$("body").on("click",function(){
+			$("body").hide("slow");
+		})
+	})
+</script>
+</body>
+</html>

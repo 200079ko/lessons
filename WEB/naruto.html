@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Naruto</title>
+	<meta charset="utf-8">
+	<Style>
+		body{
+			background-color:#ABCDEF;
+			color:purple;
+		}
+		P{
+			font-family:system-ui;
+			font-size:25px;
+			color:chocolate;
+		}
+		h1{
+			font-family:system-ui;
+			color:aquamarine;
+		}
+		h2{
+			font-family:Helvetica;
+			color:#FDECBA;
+		}
+
+	</Style>
+</head>
+<body>
+	<h1>Naruto</h1>
+	２０２１年1月18日　月曜日
+	<hr>
+	<h2>Boruto</h2>
+	<hr>
+	<h3>Sasuke</h3>
+<h1>ol list</h1>
+<ol>
+	<li id="naruto">ナルト</li>
+	<li id="sasuke">サスケ</li>
+	<li id="kakasi">カカシ</li>
+	<li id="sakura">サクラ</li>
+</ol>
+<h1>ul list</h1>
+<ul>
+	<li id="naruto2">ナルト</li>
+	<li id="sasuke2">サスケ</li>
+	<li id="kakasi2">カカシ</li>
+	<li id="sakura2">サクラ</li>
+</ul>
+	<p> Narutoは週刊少年ジャンプに連載されていた忍者の物語。<br>しかしナルトがいつ中忍試験に合格したか、わからない。<br>私は　マンガ　あまり見ないんで　わかりません。</p>
+	<hr>
+	<h2>質問</h2>
+　  <p id="mondai">ナルトはどこに住んでいますか？</p>
+	<hr>
+	<h2>質問</h2>
+　  <p id="mondai">サスケはどこに住んでいますか？</p>
+<hr>
+	<h2>質問</h2>
+　  <p id="mondai">カカシはどこに住んでいますか？</p>
+<hr>
+	<h2>質問</h2>
+　  <p id="mondai">サクラはどこに住んでいますか？</p>
+<hr>
+	<h2>入力フォーム</h2>
+	<form>
+	ID:<input type="text"name ="id"><br>
+	Passport:<input type ="password" name="password"><br>
+	Date of Birth<input type ="date"name ="date"><br>
+	<button>クリックしてください。</button><br>
+	<input type="submit"value="ok"><br>
+	<h1>画像とHTMLが同じフォルダーにある時</h1>
+	<img src="samurai.jpg" width=300><br>
+	<h2>画像が"gazoフォルダー"にある時</h2>
+	<img src="img/tutpe.jpg"width=300>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+ 	$(function(){
+		$("h1").on("click",function(){
+				$("h1").css("color","red");
+		});
+		$("h2").on("click",function(){
+			$("h2").css("color","purple");
+		});
+		$("p").on("click",function(){
+			$("p").css("color","Aqua");
+		});
+		
+		$("form").on("click",function(){
+			$("form").css("color","blue");
+		});
+		$("#naruto").on("click",function(){
+			$("#naruto").css("color","orange");
+		});
+		$("#sasuke").on("click",function(){
+			$("#sasuke").css("color","blue");
+		});
+		$("#kakasi").on("click",function(){
+			$("#kakasi").css("color","black");
+		});
+		$("#sakura").on("click",function(){
+			$("#sakura").css("color","pink");
+		});
+		$("#naruto2").on("click",function(){
+			$("$naruto2").text("鳴門");
+		});
+		$("#sasuke2").on("click",function(){
+			$("$sasuke2").text("佐助");
+		});
+		$("#kakasi2").on("click",function(){
+			$("$kakasi2").text("案山子");
+		});
+		$("#sakura2").on("click",function(){
+			$("$sakura2").text("桜");
+		});
+		$("#mondai").on("click",function(){
+			$("#mondai").text("東京？");
+		});
+	})
+	</script>
+</body>
+</html>

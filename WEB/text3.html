@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery: text3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>どうすればいい？</h1>
+<hr>
+<button id="aabc">サッカーボール</button>
+<hr>
+<button id="aaaa">泳ぐ</button>
+<hr>
+<button id="cccc">ps4ゲームする</button>
+<hr>
+<button id="dddd">旅行行く</button>
+<hr>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	 $(function(){
+		$('#aabc').on('click',function(){
+			$('h1').text('今日は大雨でできない');
+	});
+		$('#aaaa').on('click',function(){
+			$('h1').text('そします');
+	});
+		$('#cccc').on('click',function(){
+			$('h1').text('やったばっかりです');
+	});		
+		$('#dddd').on('click',function(){
+			$('h1').text('おかねないからいけない');
+	});
+	})
+</script>
+</body>
+</html>

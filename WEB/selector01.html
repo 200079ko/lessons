@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery: selector</title>
+	<meta charset="utf-8">
+</head>
+<body>
+ 	<h1>jquery: selector</h1>
+ 	<hr>
+ 	<p>
+ 		今週で、２０２０年の授業は冬休みになります。休みの日友達と旅行行こうとしています。持っていく物は↓
+ 		</p>
+ 		<ul>
+ 			<li class="goods">カメラ</li>
+ 			<li class="goods">薬</li>
+ 			<li class="goods">ジャンバー</li>
+ 			<li class="goods">お金</li>
+ 			<li id="blank">↑　これらを、バッグに入れおきます。</li>
+ 		</ul>
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 			<script>
+ 				$(function(){
+ 					$('h1').css('color','red');
+ 				$('p').css('color','blue');
+ 				$('.goods').css('color','skyblue');
+ 				$('#blank').css('color','pink');
+ 				})
+ 		</script>
+</body>
+</html>
