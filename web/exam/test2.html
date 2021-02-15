@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test2.Html</title>
+	<meta charset="utf-8">
+	<Style>
+		#maguro{
+			color:red;
+		}
+		.blue{
+			color:blue;
+		}
+</Style>
+</head>
+<body>
+	<h1>Sakana</h1>
+	<hr>
+		<ul>
+		<li id =buri>ぶり</li>
+		<li id =hamachi>はまち</li>
+		<li id=tai>たい</li>
+		<li id=maguro>まぐろ</li>
+		<li id=kohada>こはだ</li>
+	</ul>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+       <script>
+       $(function(){
+       	$('#buri').on('click',function(){
+			$('#buri').addClass("blue").hide("slow");
+		});
+		$('#hamachi').on('click',function(){
+			$('#hamachi').addClass("blue").hide("slow");
+		});
+		$('#tai').on('click',function(){
+			$('#tai').addClass("blue").hide("slow");
+		});
+		$('#maguro').on('click',function(){
+			$(this).addClass("blue").hide("slow");
+		});
+		$('#kohada').on('click',function(){
+			$(this).addClass("blue").hide("slow");
+		});
+
+   })
+</script>
+</body>
+</html>

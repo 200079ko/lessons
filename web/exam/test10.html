@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test8</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Test8</h1>
+<hr>
+<img src="img/sun.png">
+<h2>java logo</h2>
+<button id="A">-></button>
+<button id="B"><-</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function(){
+		const imgfiles = [
+		'img/sun.png',
+		'img/blah2.png',
+		'img/mozila1.jpg',
+		'img/blah.jpg'
+		]
+		const titles=[
+		"java logo",
+		"funny face",
+		"mozila logo",
+		"funny Face2"
+		]
+		let num=0
+		$("img").on("click",function(){
+			num++
+			if(num>=imgfiles.length){
+				num=0
+			}
+			$("img").attr("src",imgfiles[num]);
+			$("h2").text(titles[num]);
+		})
+		$("#A").on("click",function(){
+			num--
+			if(nun>=imgfiles.length){
+				num=0
+			}
+			$("img").attr("#scr",imgfiles[num]);
+			$("h2").text(title[num]);
+		});
+	})
+	</script>
+</body>
+</html>

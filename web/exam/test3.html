@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test3 Html</title>
+	<meta charset="utf-8">
+	<Style>
+		img{
+			width:300px;
+			height:600px;
+		}
+		.c{
+			width:600px;
+		}
+	</Style>
+</head>
+<body>
+	<h1>Test3</h1>
+	<img src="img/tutpe.jpg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+    	$('img').on('click',function(){
+    		$(this).addClass("c");
+    		});
+    })
+</script>
+</body>
+</html>

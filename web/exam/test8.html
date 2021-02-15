@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>slide3</title>
+	<title>test8</title>
 	<meta charset="utf-8">
 </head>
 <body>
-<h1>slide show3</h1>
+<h1>Test8</h1>
 <hr>
-<img src="img/blah.jpg">
+<img src="img/sun.png">
+<h2>java logo</h2>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 	$(function(){
-		alert(imgfiles[0]);
 		const imgfiles = [
-		'img/blah.jpg',  
+		'img/sun.png',
 		'img/blah2.png',
 		'img/mozila1.jpg',
-		'img/tutp.jpg'
+		'img/blah.jpg'
 		]
-		let indexnum=0;
-
-		if(induxnum==1){
+		const titles=[
+		"java logo",
+		"funny face",
+		"mozila logo",
+		"funny Face2"
+		]
+		let num=0
 		$("img").on("click",function(){
-			alert("img 1");
 			num++
 			if(num>=imgfiles.length){
 				num=0
 			}
 			$("img").attr("src",imgfiles[num]);
-		});
-	}
+			$("h2").text(titles[num]);
+		})
 	})
 	</script>
 </body>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<meta charset="utf-8">
+	
+	<style>
+		.blue{
+			color:green;
+		}
+		.red{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<h1>jquery test</h1>
+	<img src="img/blah.jpg"width=200 alt= "javacharacter">
+	<hr>
+	<ul>
+		<li id=apple>apple</li>
+		<li id=banana>banana</li>
+		<li id=apple2>pine-apple</li>
+		<li id=papaya>papaya</li>
+	</ul>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<script>
+		$(function(){
+		$("h1").on("click",function(){
+			$(this).addClass("blue");
+		});
+		let mg=1;
+		$("img").on("click",function(){
+		if(mg==1){
+			$(this).attr("src","img/blah2.png");
+			mg=0;
+		}else{
+			$(this).attr("src","img/blah.jpg");
+			mg=1;
+		}
+		});
+		$("body").on("mousemove",function(e){
+			$("h1").text(e.clientX);
+		});
+		$("li").on("click",function(){
+			$(this).text("Namestey");
+		});
+		let apple=1;
+		$("#apple").on("click",function(){
+		if(apple==1){
+			$(this).text("Namestey!").addClass("red");
+			apple=0;
+		}else{
+			$(this).text("apple").css("color","purple");
+			apple=1;
+		}
+		});
+		let banana=1;
+		$("#banana").on("click",function(){
+		if(banana==1){
+			$(this).text("Namestey!").addClass("red");
+			banana=0;
+		}else{
+			$(this).text("banana").addClass("blue");
+			banana=1;
+		}
+		});
+		let apple2=1;
+		$("#apple2").on("click",function(){
+		if(apple2==1){
+			$(this).text("Namestey").addClass("red");
+			apple2=0;
+		}else{
+			$(this).text("pine-apple").addClass("red");
+			apple2=1;
+		}
+		});
+		let papaya=1;
+		$("#papaya").on("click",function(){
+		if(papaya==1){
+			$(this).text("Namestey!").addClass("red");
+			papaya=0;
+		}else{
+			$(this).text("papaya").addClass("blue");
+			papaya=1;
+		}
+		});
+	})
+	</script>
+</body>
+</html>

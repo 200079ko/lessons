@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test 6</title>
+	<meta charset="utf-8">
+	<Style>
+		#B{
+			height:200px;
+			width:200px;
+		}
+	</Style>
+</head>
+<body>
+	<h1>Test 6</h1>
+	<img id="A" src="img/mozila1.jpg">
+	<img id="B" src="img/ninja.jpg">
+	<br>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		 $(function(){
+            const imgfiles=[
+            'img/mozila1.jpg',
+            'img/ninja.jpg.'
+            ]
+            let num=0
+		$("#A").on("click",function(){
+			num++
+			if(num>=imgfiles.length){
+				num=0
+			}
+			$("#A").attr("src",imgfiles[num]);
+		});
+
+		 $("#B").on("click",function(){
+			num++
+			if(num>=imgfiles.length){
+				num=0
+			}
+			$("#B").attr("src",imgfiles[num]);
+		});
+		})
+	</script>
+</body>
+</html>

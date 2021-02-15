@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test5 Html</title>
+	<meta charset="utf-8">
+    <Style>
+        img{
+            width:200px;
+            height:200px;
+        }
+    </Style>
+</head>
+<body>
+	<h1>Test5</h1>
+    <br>
+    <img id="A" src="img/blah2.png">
+    <img id="B" src="img/sun.png">
+    <br>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>
+        $(function(){
+            const imgfiles=[
+            'img/sun.png',
+            'img/blah2.png'
+            ]
+            let num=0
+        $("#A").on("click",function(){
+            num++
+            if(num>=imgfiles.length){
+                num=0
+            }
+            $("#B").fadeOut("src",imgfiles[num]);
+        });
+
+         $("#B").on("click",function(){
+            num++
+            if(num>=imgfiles.length){
+                num=0
+            }
+            $("#B").attr("src",imgfiles[num]);
+        });
+        })
+</script>
+</body>
+</html>

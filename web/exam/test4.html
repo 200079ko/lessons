@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test3 Html</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Test3</h1>
+	<h2>この写真は昔ミャンマーに人気あったアニメのです。</h2>
+	<img src="tutpe.jpg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+    	$('img').on('click',function(){
+    		$(this).hide("slow");
+    		});
+    	$('h1').on('click',function(){
+    		$(this).hide("slow");
+    	});
+    	$('h2').on('click',function(){
+    		$(this).hide("slow");
+    	})
+    })
+</script>
+</body>
+</html>
